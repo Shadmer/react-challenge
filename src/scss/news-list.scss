@@ -1,0 +1,17 @@
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: (($offset / 2) * -1);
+    margin-left: (($offset / 2) * -1);
+
+    &__item {
+        width: calc(100% / #{$columns} - #{$offset});
+        margin-right: $offset / 2;
+        margin-left: $offset / 2;
+        margin-bottom: $offset;
+
+        @media screen and (max-width: $break_md) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.app {
+    max-width: 1400px;
+    padding: 72px 104px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $break_xs) {
+        padding: 72px 20px;
+    }
+
+    &__top-menu {
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &__bottom-menu {
+        text-align: center;
+    }
+    
+    &__blank {
+        text-align: center;
+
+        h2 {
+            color: red;
+        }
+    }
+}

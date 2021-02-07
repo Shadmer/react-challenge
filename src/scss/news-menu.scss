@@ -1,0 +1,31 @@
+.news-menu {
+    display: flex;
+    //Можно учесть переносы, но да ладно...
+    //flex-wrap: wrap;
+    
+    &__item {
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+            padding: 12px 16px;
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration: none;
+            color: #2A2A2A;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        &--active {
+            a {
+                background: #FFFFFF;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.04), 0px 2px 8px rgba(0, 0, 0, 0.08);
+                border-radius: 8px;
+            }
+        }
+    }
+}

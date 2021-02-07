@@ -1,0 +1,19 @@
+.load-more {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #154373;
+        opacity: 0.15;
+    }
+
+    button {
+        position: relative;
+        z-index: 1;
+    }
+}
